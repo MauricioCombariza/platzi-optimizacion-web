@@ -12,7 +12,12 @@ const config = {
     filename: 'bundle.js',
   },
   devServer: {
-    contentBase: '.',
+    static: './',
+  },
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/dist/',
+    filename: 'bundle.js',
   },
 }
 
